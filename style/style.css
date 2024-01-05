@@ -58,7 +58,6 @@ html {
     margin: 0;
     text-align: justify;
     color: white;
-    font-size: 1.3rem;
   }
   
   .text-box span {
@@ -209,6 +208,7 @@ html {
   .wish-hbd {
     font-size: 3rem;
     margin: 0;
+    color: white;
   }
   
   .wish h5 {
@@ -230,25 +230,25 @@ html {
   
   /* Media Queries */
   @media screen and (max-height: 1000px) {
-    .six .hat {
+    .six {
       left: 40%;
     }
   }
   
   @media screen and (max-height: 800px) {
-    .six .hat {
+    .six {
       left: 37%;
     }
   }
   
   @media screen and (max-height: 700px) {
-    .six .hat {
+    .six {
       left: 32%;
     }
   }
   
   @media screen and (max-height: 850px) and (max-width: 450px) {
-    .six .hat {
+    .six {
       left: 32%;
     }
   }

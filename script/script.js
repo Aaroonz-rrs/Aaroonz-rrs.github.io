@@ -32,8 +32,19 @@ window.addEventListener('load', () => {
         if (result.isConfirmed) {
             document.querySelector('.song').play();
             animationTimeline();
+        // To revert for choosing "Tidak"
         } else {
-            animationTimeline();
+            swal.fire({
+                icon: 'error',
+                title: 'Pilih "Iya" yaa..',
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'Ok',
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    location.reload();
+                }
+            })
+            
         }
     });
 });
@@ -185,7 +196,7 @@ const animationTimeline = () => {
     .from(
         ".profile-picture",
         0.5, {
-            scale: 3.5,
+            scale: 0.5,
             opacity: 0,
             x: 25,
             y: -25,
@@ -194,9 +205,7 @@ const animationTimeline = () => {
         "-=2"
     )
 
-    .staggerFrom(
-        ".wish-hbd span",
-        0.7, {
+    .staggerFrom(".wish-hbd span", 0.7, {
             opacity: 0,
             y: -50,
             // scale: 0.3,
@@ -214,7 +223,7 @@ const animationTimeline = () => {
         }, {
             scale: 1,
             rotationY: 0,
-            color: "#ff69b4",
+            color: "rgb(127, 206, 248)",
             ease: Expo.easeOut,
         },
         0.1,
