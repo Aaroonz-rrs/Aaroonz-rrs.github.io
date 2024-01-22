@@ -265,7 +265,7 @@ const animationTimeline = () => {
 
     function wa(isi) 
     {
-        open("https://wa.me/6285608107370?text=Makasih ya udah inget hari ulang tahun aku, di hari spesial ini aku mau " + isi)
+        open("https://wa.me/6285608107370?text=Terima kasih ya udah inget hari ulang tahun aku, di hari spesial ini aku mau " + isi)
     }
 
     // Wishes
@@ -280,7 +280,7 @@ const animationTimeline = () => {
     
         if (kado) {
             await swal.fire({
-                title: 'Kirim jawabannya ke wa aku ya?',
+                title: 'Kirim jawabannya ke WA aku ya?',
                 confirmButtonColor: '#2fe965',
                 confirmButtonText: 'Kirim ✈'
             });
