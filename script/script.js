@@ -265,7 +265,7 @@ const animationTimeline = () => {
 
     function wa(isi) 
     {
-        open("https://wa.me/6285608107370?text=Terima kasih ya udah inget hari ulang tahun aku, di hari spesial ini aku mau " + isi)
+        open("https://wa.me/6282229814095?text=Terima kasih ya udah inget hari ulang tahun aku, di hari spesial ini aku mau " + isi)
     }
 
     // Wishes
